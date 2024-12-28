@@ -18,9 +18,16 @@
   margin-left: 10px;
 }
 
+.header-logo {
+  height: auto;
+}
+
 @media screen and (max-width: 1199px) {
   .header-title {
     font-size: 26px;
+  }
+  .header-logo {
+    width: 12px;
   }
 }
 @media screen and (max-width: 768px) {
