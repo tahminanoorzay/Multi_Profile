@@ -6,7 +6,7 @@
 /* Header Section */
 
 .header-bg {
-  background: rgb(8, 41, 43);
+  background: #08292b;
   background: linear-gradient(
     to right,
     #08292b 0%,
@@ -80,6 +80,64 @@
   color: white;
 }
 
+/* Header Img Section */
+
+.header-img {
+  background: url(/img/header-img.jpg) no-repeat center center;
+  background-size: cover;
+  height: 540px;
+}
+
+/* Header Welcome Section */
+
+.welcome-container {
+  background: #1b434c;
+  background: linear-gradient(to bottom, #3f6973 0%, #2f5f6b 41%, #133640 100%);
+}
+.welcome-wrapper {
+  display: flex;
+  align-items: center;
+}
+.welcome-title,
+.welcome-description {
+  display: inline-block;
+  margin: 0;
+  max-width: 700px;
+  color: #fff;
+  padding: 20px;
+}
+.welcome-divider-lines-img {
+  display: inline-block;
+  width: 6px;
+  height: 49px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Main Section */
+
+.section-shadow-bottom {
+  background-image: url(/img/section-shadow.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.section-title-container {
+  margin-bottom: 60px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 42px;
+}
+.section-title-underline {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.section-title-underline-blue {
+  border-bottom: 2px solid #08292b;
+  margin: 5px auto 0 auto;
+  width: 40px;
+}
+
 /* Media Query Section */
 
 @media screen and (max-width: 1199px) {
@@ -95,12 +153,28 @@
   .header-nav li a {
     width: 150px;
   }
+  .header-img {
+    height: 360px;
+  }
+  .welcome-title {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .header-nav li a {
     padding-top: 15px;
     width: 115px;
+  }
+  .header-img {
+    height: 270px;
+  }
+  .welcome-wrapper {
+    display: inline-block;
+  }
+  .welcome-divider-lines-img {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -144,5 +218,8 @@
     height: 40px;
     padding-top: 9px;
     padding-left: 11px;
+  }
+  .welcome-divider-lines-img {
+    height: 35px;
   }
 }
