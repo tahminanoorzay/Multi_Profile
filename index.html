@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/css/fontawesome.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
 
     <!-- font-awesome link -->
     <link
@@ -16,8 +20,8 @@
     />
 
     <!-- JS links -->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/JS/script.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Multi Profile</title>
   </head>
@@ -37,10 +41,24 @@
           <div class="col-lg-9 col-md-8 col-sm-8 header-nav-container">
             <nav class="header-nav">
               <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="profile.html">profile</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li>
+                  <a href="index.html" class="active text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" class="text-decoration-none">About</a>
+                </li>
+                <li>
+                  <a href="profile.html" class="text-decoration-none"
+                    >profile</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html" class="text-decoration-none"
+                    >contact</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
@@ -91,19 +109,80 @@
               <b>Morbi</b> <span class="blue-text">Accumsan</span>
             </h3>
             <p>
-              Credit goes to <a href="http://unsplash.com">Unsplash</a> for
-              images used in this template. Morbi dapibus rhoncus nulla ac
+              Credit goes to
+              <a class="text-decoration-none" href="http://unsplash.com"
+                >Unsplash</a
+              >
+              for images used in this template. Morbi dapibus rhoncus nulla ac
               tempus. Integer felis lorem, fermentum quis nisl accumsan, gravida
               gravida est. Cras ultrices rhoncus dui ut laoreet. Fusce
               tincidunt, urna a imperdiet tempor, orci dolor dictum elit, sit
               amet malesuada mauris magna eget dolor. Morbi ornare convallis
               vulputate. Donec ut suscipit nisl, ac elementum nisi.
             </p>
+            <ul class="gray-text ul-1">
+              <li>Sed non mauris vitae erat consequat auctor</li>
+              <li>Class aptent taciti sociosqu</li>
+              <li>Wonubia nostra, per inceptos himeos</li>
+            </ul>
+            <a href="#" class="btn-blue-gradient text-decoration-none"
+              >Prima Liuam</a
+            >
+            <a href="#" class="btn-transparent text-decoration-none"
+              >Prima Liuam</a
+            >
+          </div>
+
+          <!-- Carousel Section -->
+          <div class="col-lg-6 col-md-6">
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/1.jpg"
+                    class="d-block w-100 img-thumbnail"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/2.jpg"
+                    class="d-block w-100 img-thumbnail"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/3.jpg"
+                    class="d-block w-100 img-thumbnail"
+                    alt="Image 3"
+                  />
+                </div>
+              </div>
+              <div class="crsl-nav">
+                <a
+                  class="carousel-control-prev"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <img src="img/carousel-arrow-previous.png" alt="previous" />
+                </a>
+                <a
+                  class="carousel-control-next"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <img src="img/carousel-arrow-next.png" alt="next" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Main Section -->
   </body>
 </html>

@@ -1,2 +1,45 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
-@use "";
+
+/* Carousel Section  */
+.btn-transparent,
+.btn-blue-gradient {
+  font-weight: 700;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.img-thumbnail {
+  border-radius: 0;
+  padding: 8px;
+}
+
+.carousel-container {
+  position: relative;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.carousel-inner {
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000000; /* Customize the arrows' color */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
