@@ -205,6 +205,64 @@
   text-transform: uppercase;
 }
 
+/* Who we are Section */
+.tm-blocks-container {
+  overflow: hidden;
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.tm-block {
+  font-weight: 300;
+  color: white;
+  float: left;
+  width: 155px;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tm-block-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.tm-block-link:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.5019607843);
+}
+
+.light-gray-bg {
+  background-color: #f2f2f2;
+}
+
+.green-bg {
+  background-color: #079704;
+}
+
+.red-bg {
+  background-color: #aa2020;
+}
+
+.yellow-bg {
+  background-color: #d5ba06;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.effect1 {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
 /* Media Query Section */
 @media screen and (max-width: 1199px) {
   .header-title {
@@ -243,6 +301,11 @@
   }
   .carousel-container {
     margin-top: 50px;
+  }
+  .tm-blocks-container {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -288,6 +351,15 @@
   }
   .welcome-divider-lines-img {
     height: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tm-blocks-container {
+    max-width: 240px;
+  }
+  .tm-block {
+    width: 120px;
+    height: 120px;
   }
 }
 @media screen and (max-width: 400px) {
