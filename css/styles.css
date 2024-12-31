@@ -330,6 +330,124 @@
   padding-top: 40px;
 }
 
+/* Features Section */
+.features {
+  background: url(/img/feature-bg.jpg) no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  position: relative;
+  padding: 100px;
+}
+
+.features-content {
+  color: #ffffff;
+  position: relative;
+  z-index: 999;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.feature-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tm-progress-container {
+  width: 360px;
+  max-width: 100%;
+}
+
+.tm-progress-container-left {
+  float: left;
+}
+
+.tm-progress-container-right {
+  float: right;
+}
+
+.tm-progress-label {
+  overflow: hidden;
+}
+
+.tm-progress .progress-bar {
+  background-color: #225965;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+/* Footer Section */
+.footer-nav {
+  font-size: 12px;
+  background-color: #27606d;
+  padding: 100px;
+  color: #fff;
+}
+
+.footer-nav h3 {
+  font-size: 14px;
+}
+
+.footer-nav li {
+  list-style: none;
+  line-height: 2em;
+}
+
+.footer-nav p,
+.footer-nav li a {
+  color: #ccc;
+}
+
+.footer-nav li a:hover {
+  color: #ffffff;
+}
+
+.blue-divider {
+  display: flex;
+  height: 20px;
+}
+
+.blue-divider div {
+  height: 100%;
+}
+
+.blue-divider .dark-blue-bg {
+  width: 30%;
+}
+
+.blue-divider .blue-bg {
+  background-color: #1b434c;
+  width: 60%;
+}
+
+.dark-blue-bg {
+  background-color: #072628;
+}
+
+.blue-divider-bg-graphic {
+  background: #08292b url(/img/header-lines.jpg) right center no-repeat;
+  width: 10%;
+}
+
+footer {
+  background: #122f35;
+}
+
+.copyright-text {
+  color: #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
+
 /* Media Query Section */
 @media screen and (max-width: 1199px) {
   .header-title {
@@ -446,6 +564,16 @@
   }
   .post-content {
     max-width: 300px;
+  }
+  .tm-progress-container {
+    margin: 0 auto;
+  }
+  .tm-progress-container-left,
+  .tm-progress-container-right {
+    float: none;
+  }
+  .footer-block {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 500px) {
